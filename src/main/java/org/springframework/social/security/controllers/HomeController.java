@@ -47,7 +47,10 @@ public class HomeController {
         if (!connections.isEmpty()) {
             modelAndView.addObject("facebookConnected", "true");
         }
-
+        connections = connectionRepository.findConnections("vkontakte");
+        if (!connections.isEmpty()) {
+            modelAndView.addObject("vkontakteConnected", "true");
+        }
         return modelAndView;
     }
 }

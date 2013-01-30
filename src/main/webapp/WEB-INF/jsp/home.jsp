@@ -51,6 +51,24 @@
                 </c:otherwise>
             </c:choose>
         </li>
+        <li>
+            <c:choose>
+                <c:when test="${vkontakteConnected}">
+                    <form name="vkontakte" action="<c:url value="/connect/vkontakte"/>" method="POST">
+                        <label for="disconnectVkontakte" style="color:green">VK Account Connected!</label>
+                        <input id="disconnectVkontakte" class="submitBtn" type="button" name="disconnectVkontakteBtn"
+                               value="Disconnect" onclick="document.forms.vkontakte.submit()">
+                    </form>
+                </c:when>
+                <c:otherwise>
+                    <form name="vkontakte" action="<c:url value="/connect/vkontakte"/>" method="POST">
+                        <label for="connectVkontakte">VK Account not connected</label>
+                        <input id="connectVkontakte" class="submitBtn" type="button" name="connectVkontakteBtn"
+                               value="Connect With VK!" onclick="document.forms.vkontakte.submit()">
+                    </form>
+                </c:otherwise>
+            </c:choose>
+        </li>
     </ol>
 </fieldset>
 

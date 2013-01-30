@@ -1,3 +1,10 @@
+In this version:
+
+ - Added VK (vk.com) authorization
+ - Disable accessToken encryption (security methods in original version results in an error)
+
+------------------------
+
 This is a simple Web application that demonstrates adding Spring Social to an
 existing application that uses Spring Security for authentication and
 authorization, and that manages its own user accounts (with usernames and 
@@ -26,6 +33,8 @@ values for all of the following properties:
 - twitter.app.consumerSecret - the consumer secret for your Twitter application
 - facebook.app.clientId - the client id for your Facebook application
 - facebook.app.clientSecret - the client secret for your Facebook application
+- vkontakte.app.clientId - the client id for your VK application
+- vkontakte.app.clientSecret - the client secret for your VK application
 
 This app uses an in-memory database, so once you've got the properties file
 configured, you should be able to build and run the app (e.g. using

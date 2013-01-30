@@ -69,6 +69,12 @@
                     Facebook</a>
             </form>
         </li>
+        <li>
+            <form id="vk_signin" action="<c:url value="/signin/vkontakte"/>" method="POST">
+                <a href="javascript:document.forms.vk_signin.submit()" title="Log In With VK">Log In With
+                    VK</a>
+            </form>
+        </li>
     </ol>
 </fieldset>
 

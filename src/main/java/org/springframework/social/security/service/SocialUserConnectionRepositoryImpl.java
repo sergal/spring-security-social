@@ -28,7 +28,7 @@ public class SocialUserConnectionRepositoryImpl implements ConnectionRepository 
         this.userId = userId;
         this.socialUserDAO = socialUserDAO;
         this.connectionFactoryLocator = connectionFactoryLocator;
-        this.textEncryptor = textEncryptor;
+        this.textEncryptor = null;
     }
 
     public MultiValueMap<String, Connection<?>> findAllConnections() {
